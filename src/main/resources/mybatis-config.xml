@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+
+    <!-- 设置 -->
+    <settings>
+        <!-- 开启自动映射 -->
+        <setting name="autoMappingBehavior" value="PARTIAL"/>
+        <!-- 缓存开启 -->
+        <setting name="cacheEnabled" value="true"/>
+        <!-- 延迟加载 -->
+        <setting name="lazyLoadingEnabled" value="true"/>
+        <!-- 使用列别名 -->
+        <setting name="useColumnLabel" value="true"/>
+        <!-- 返回空值列表 -->
+        <setting name="returnInstanceForEmptyRow" value="false"/>
+        <!-- 日志实现 -->
+        <setting name="logImpl" value="SLF4J"/>
+        <!-- 数据库映射 -->
+        <setting name="mapUnderscoreToCamelCase" value="true"/>
+    </settings>
+
+    <!-- 类型别名 -->
+    <typeAliases>
+        <package name="com.yuanyang.model"/>
+    </typeAliases>
+
+    <!-- 类型处理器 -->
+    <typeHandlers>
+        <!-- 自定义类型处理器 -->
+    </typeHandlers>
+
+</configuration>
